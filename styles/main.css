@@ -1,0 +1,85 @@
+body {
+  font-family: 'Work Sans', sans-serif;
+  cursor: default;
+}
+
+.handle {
+  position: absolute;
+  top: 45%;
+  left:50%;
+  transform: translate(-50%,-50%);
+
+  font-size: 4rem;
+}
+
+.tag-line {
+  position: absolute;
+  top: 55%;
+  left:50%;
+  transform: translate(-50%,-50%);
+
+  font-size: 2rem;
+}
+
+.clear {
+  opacity: 0;
+}
+
+.head-shot {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  height: 200px;
+  border-color: rgb(148, 211, 255);
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 50%;
+}
+
+.about-me-text {
+  position: absolute;
+  top: 70%;
+  left:50%;
+  transform: translate(-50%,-50%);
+
+  font-size: 1.25rem;
+  width: 600px;
+}
+
+#case-studies {
+  height: 92rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.bloc-jams {
+  margin: 0 auto;
+  display: block;
+  padding-top: 6rem;
+  padding-bottom: .5rem;
+}
+
+.bloc-jams-title {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+
+.bloc-jams-description {
+  font-size: 2rem;
+  width: 750px;
+  display: inline-block;
+}
+
+@media (max-width: 667px) {
+  .handle {font-size: 3rem;}
+  .head-shot {top: 25%;}
+  .about-me-text {font-size: 1rem; top: 65%; max-width: 300px;}
+
+  #case-studies {height: 60rem;}
+  .bloc-jams {padding-top: 3rem; width: 300px;}
+  .bloc-jams-title {padding-bottom: 0rem;}
+  .bloc-jams-pics {width: 300px;}
+  .bloc-jams-description {font-size: 1.5rem;width: 300px; padding-top: 0rem;}
+}
