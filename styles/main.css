@@ -1,50 +1,50 @@
 body {
   font-family: 'Work Sans', sans-serif;
+  font-weight: bold;
   cursor: default;
+  font-size: 2rem;
 }
 
 .handle {
   position: absolute;
-  top: 45%;
-  left:50%;
+  top: 40%;
+  left: 50%;
   transform: translate(-50%,-50%);
-
-  font-size: 4rem;
+  font-size: 6rem;
 }
 
 .tag-line {
   position: absolute;
   top: 55%;
-  left:50%;
+  left: 50%;
   transform: translate(-50%,-50%);
-
-  font-size: 2rem;
+  font-size: 3.5rem;
+  font-weight: normal;
 }
 
 .clear {
   opacity: 0;
 }
 
-.head-shot {
+.about-content {
   position: absolute;
-  top: 30%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%,-50%);
+}
 
+.head-shot {
   height: 200px;
   border-color: rgb(148, 211, 255);
   border-width: 3px;
   border-style: solid;
   border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 6rem;
 }
 
 .about-me-text {
-  position: absolute;
-  top: 70%;
-  left:50%;
-  transform: translate(-50%,-50%);
-
-  font-size: 1.25rem;
   width: 600px;
 }
 
@@ -72,14 +72,25 @@ body {
   display: inline-block;
 }
 
-@media (max-width: 667px) {
-  .handle {font-size: 3rem;}
-  .head-shot {top: 25%;}
-  .about-me-text {font-size: 1rem; top: 65%; max-width: 300px;}
+@media only screen and (max-width: 667px) {
+  nav {font-size: 1.5rem;}
+  .about-content {top: 90%;}
+  .head-shot {margin-bottom: 4rem;}
+  .about-me-text {font-size: 2rem; max-width: 550px;}
 
   #case-studies {height: 60rem;}
   .bloc-jams {padding-top: 3rem; width: 300px;}
   .bloc-jams-title {padding-bottom: 0rem;}
   .bloc-jams-pics {width: 300px;}
   .bloc-jams-description {font-size: 1.5rem;width: 300px; padding-top: 0rem;}
+}
+
+@media only screen and (max-width: 375px) {
+  .about-content {top: 70%;}
+  .tag-line {top: 55%; font-size: 3rem;}
+  .about-me-text {max-width: 300px;}
+}
+
+@media only screen and (max-height: 450px) {
+  .tag-line {top: 60%}
 }

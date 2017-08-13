@@ -3,31 +3,41 @@
 <head>
   <title>Portfolio Site</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:100" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 
 <body>
   <div class="container">
-    <nav class="nav-tabs nav-bar">
-      <ul class="nav">
+    <nav>
+      <ul class="nav nav-tabs">
         <li><a class="nav-link" href="index.html">home</a></li>
-        <li><a class="nav-link" href="about.html">about</a></li>
-        <li><a class="nav-link" href="projects.html">projects</a></li>
+        <li class="active"><a href="about.html">about</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown">projects
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">much ado</a></li>
+              <li class="divider"></li>
+              <li><a href="projects.html">view all</a></li>
+            <ul>
+        </li>
       </ul>
     </nav>
 
-    <img class="head-shot" src="assets/headshot_with_lights.jpg">
-    <div class="about-me-text">
-      <p>Hi! My name is Joe. I'm a teacher living in Queens, New York looking to transition into web development.</p>
-      <p>Please take a look at my collection projects. Technologies used in their creation include HTML, CSS, jQuery, AngularJs, and Ruby on Rails.</p>
-      <p>The best way to reach me is with an email to joseph.hakoopian@gmail.com. I hope to hear from you!</p>
+    <div class="about-content">
+      <img class="head-shot" src="assets/headshot_with_lights.jpg">
+      <div class="about-me-text">
+        <p>Hi! My name is Joe. I'm a teacher living in Queens, New York looking to transition into web development.</p>
+        <p>Please take a look at my collection of projects. Languages and libraries I'm familiar with include HTML, CSS, Bootstrap, jQuery, AngularJs, and Ruby on Rails, and assorted gems .</p>
+        <p>The best way to reach me is with an email addressed to joseph.hakoopian@gmail.com. I hope to hear from you!</p>
+      </div>
     </div>
 
   </div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>  <script src="scripts/landing.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
