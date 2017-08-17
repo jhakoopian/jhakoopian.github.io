@@ -59,6 +59,10 @@ body {
   margin-bottom: 6rem;
 }
 
+.btn {
+  font-weight: bold;
+}
+
 .project-overview-content {
   height: 200px;
   position: absolute;
@@ -98,29 +102,11 @@ body {
   border-color: rgb(225, 225, 225);
   border-radius: 5px;
   margin: 20px 0px 20px 0px;
-  width: 100%;
+  max-width: 100%;
 }
 
 .mobile-project-pic {
   display: none;
-}
-
-.bloc-jams {
-  margin: 0 auto;
-  display: block;
-  padding-top: 6rem;
-  padding-bottom: .5rem;
-}
-
-.bloc-jams-title {
-  font-size: 3rem;
-  padding-bottom: 1rem;
-}
-
-.bloc-jams-description {
-  font-size: 2rem;
-  width: 750px;
-  display: inline-block;
 }
 
 @media only screen and (max-width: 667px) {
@@ -133,8 +119,7 @@ body {
 }
 
 @media only screen and (max-width: 375px) {
-  .about-content {height: 500px;}
+  .about-content {height: 300px;}
   .project-overview-content {height: 400px;}
   .desktop-project-pic {display: none;}
-  .mobile-project-pic {display: block;}
 }
