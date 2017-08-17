@@ -59,10 +59,6 @@ body {
   margin-bottom: 6rem;
 }
 
-.btn {
-  font-weight: bold;
-}
-
 .project-overview-content {
   height: 200px;
   position: absolute;
@@ -116,10 +112,12 @@ body {
   .about-text {font-size: 2rem;}
   .project-overview-content {height: 250px;}
   .project-overview-div {margin-bottom: 25px;}
+  .btn {font-weight: bolder;}
 }
 
 @media only screen and (max-width: 375px) {
   .about-content {height: 300px;}
   .project-overview-content {height: 400px;}
   .desktop-project-pic {display: none;}
+  .mobile-project-pic {display: block;}
 }
