@@ -5,21 +5,29 @@ body {
   font-size: 2rem;
 }
 
-.handle {
+.index-text-container {
+  height: 150px;
   position: absolute;
-  top: 40%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.handle {
+  /*position: absolute;
+  top: 55%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);*/
   font-size: 6rem;
+  text-align: center;
 }
 
 .tag-line {
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  font-size: 3.5rem;
+  font-size: 3.25rem;
   font-weight: normal;
+  text-align: center;
 }
 
 .clear {
@@ -27,16 +35,23 @@ body {
 }
 
 .about-content {
+  height: 450px;
   position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.about-margin {
+  margin-bottom: 2rem;
 }
 
 .head-shot {
   height: 200px;
   border-color: rgb(148, 211, 255);
-  border-width: 3px;
+  border-width: 2px;
   border-style: solid;
   border-radius: 50%;
   margin: 0 auto;
@@ -44,14 +59,50 @@ body {
   margin-bottom: 6rem;
 }
 
-.about-me-text {
-  width: 600px;
+.project-overview-content {
+  height: 200px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
-#case-studies {
-  height: 92rem;
-  font-size: 1rem;
+.project-overview-div {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: rgb(225, 225, 225);
+  padding: 20px;
+  margin: 10px;
+}
+
+.check-box-graphic {
+  height: 80px;
+  margin-top: 30px;
+}
+
+.music-note-graphic {
+  height: 80px;
+  margin-top: 30px;
+}
+
+.much-ado {
   text-align: center;
+}
+
+.project-pic {
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(225, 225, 225);
+  border-radius: 5px;
+  margin: 20px 0px 20px 0px;
+  width: 100%;
+}
+
+.mobile-project-pic {
+  display: none;
 }
 
 .bloc-jams {
@@ -74,23 +125,16 @@ body {
 
 @media only screen and (max-width: 667px) {
   nav {font-size: 1.5rem;}
-  .about-content {top: 90%;}
+  .about-content {height: 200px;}
   .head-shot {margin-bottom: 4rem;}
-  .about-me-text {font-size: 2rem; max-width: 550px;}
-
-  #case-studies {height: 60rem;}
-  .bloc-jams {padding-top: 3rem; width: 300px;}
-  .bloc-jams-title {padding-bottom: 0rem;}
-  .bloc-jams-pics {width: 300px;}
-  .bloc-jams-description {font-size: 1.5rem;width: 300px; padding-top: 0rem;}
+  .about-text {font-size: 2rem;}
+  .project-overview-content {height: 250px;}
+  .project-overview-div {margin-bottom: 25px;}
 }
 
 @media only screen and (max-width: 375px) {
-  .about-content {top: 70%;}
-  .tag-line {top: 55%; font-size: 3rem;}
-  .about-me-text {max-width: 300px;}
-}
-
-@media only screen and (max-height: 450px) {
-  .tag-line {top: 60%}
+  .about-content {height: 500px;}
+  .project-overview-content {height: 400px;}
+  .desktop-project-pic {display: none;}
+  .mobile-project-pic {display: block;}
 }
