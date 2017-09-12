@@ -1,8 +1,8 @@
 body {
-  font-family: 'Work Sans', sans-serif;
-  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
   cursor: default;
   font-size: 2rem;
+  /*font-weight: lighter;*/
 }
 
 .index-text-container {
@@ -26,7 +26,7 @@ body {
 
 .tag-line {
   font-size: 3.25rem;
-  font-weight: normal;
+  /*font-weight: normal;*/
   text-align: center;
 }
 
@@ -69,23 +69,18 @@ body {
   margin: auto;
 }
 
-.project-overview-div {
+.project {
   border-width: 1px;
   border-style: solid;
   border-radius: 5px;
   border-color: rgb(225, 225, 225);
   padding: 20px;
-  margin: 10px;
 }
 
-.check-box-graphic {
-  height: 80px;
+.project-graphic {
+  height: 60px;
   margin-top: 30px;
-}
-
-.music-note-graphic {
-  height: 80px;
-  margin-top: 30px;
+  margin-left: -10px;
 }
 
 .much-ado {
@@ -105,19 +100,24 @@ body {
   display: none;
 }
 
+@media only screen and (max-width: 991px) {
+  .project-overview-content {height: 500px;}
+  .project {margin-bottom: 20px;}
+}
+
 @media only screen and (max-width: 667px) {
   nav {font-size: 1.5rem;}
   .about-content {height: 200px;}
   .head-shot {margin-bottom: 4rem;}
   .about-text {font-size: 2rem;}
-  .project-overview-content {height: 250px;}
-  .project-overview-div {margin-bottom: 25px;}
-  .btn {font-weight: bolder;}
+  .project-overview-content {height: 275px;}
+  .project { margin: 15px;}
+  /*.btn {font-weight: bolder;}*/
 }
 
 @media only screen and (max-width: 375px) {
   .about-content {height: 300px;}
-  .project-overview-content {height: 400px;}
+  .project-overview-content {height: 325px;}
   .desktop-project-pic {display: none;}
   .mobile-project-pic {display: block;}
 }
