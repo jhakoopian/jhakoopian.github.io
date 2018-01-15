@@ -1,51 +1,47 @@
 body {
   font-family: 'Raleway', sans-serif;
   cursor: default;
-  font-size: 2rem;
-  /*font-weight: lighter;*/
+  font-size: 1.8rem;
 }
 
-.index-text-container {
-  height: 150px;
-  position: absolute;
+.container {
+  padding-bottom: 50px;
+}
+
+.handle-tag-line-container {
+  height: 120px;
+  padding-top: 250px;
+  padding-bottom: 350px;
+  text-align: center;
+  /*previous vertical align solution*/
+  /*position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  margin: auto;
+  margin: auto;*/
 }
 
 .handle {
-  /*position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%,-50%);*/
   font-size: 6rem;
-  text-align: center;
 }
 
 .tag-line {
   font-size: 3.25rem;
-  /*font-weight: normal;*/
-  text-align: center;
 }
 
 .clear {
   opacity: 0;
 }
 
-.about-content {
-  height: 450px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+hr {
+  border-top: 1px solid rgb(221, 221, 221);
 }
 
-.about-margin {
-  margin-bottom: 2rem;
+.heading {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 5rem;
 }
 
 .head-shot {
@@ -56,17 +52,20 @@ body {
   border-radius: 50%;
   margin: 0 auto;
   display: block;
-  margin-bottom: 6rem;
+  margin-bottom: 50px;
 }
 
-.project-overview-content {
-  height: 200px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+.about-content {
+  padding-top: 50px;
+}
+
+.about-content p {
+  margin-bottom: 20px;
+}
+
+.projects-overview {
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 
 .project {
@@ -75,6 +74,7 @@ body {
   border-radius: 5px;
   border-color: rgb(225, 225, 225);
   padding: 20px;
+  margin-bottom: 30px;
 }
 
 .project-graphic {
@@ -83,8 +83,13 @@ body {
   margin-left: -10px;
 }
 
-.much-ado {
-  text-align: center;
+.resume-graphic {
+  height: 70px;
+  margin-left: -20px;
+}
+
+.project-page {
+  margin-top: 50px;
 }
 
 .project-pic {
@@ -107,6 +112,10 @@ body {
 
 @media only screen and (max-width: 667px) {
   nav {font-size: 1.5rem;}
+  .handle-tag-line-container {
+    padding-top: 75px;
+    padding-bottom: 200px;
+  }
   .about-content {height: 200px;}
   .head-shot {margin-bottom: 4rem;}
   .about-text {font-size: 2rem;}
@@ -116,6 +125,10 @@ body {
 }
 
 @media only screen and (max-width: 375px) {
+  .handle-tag-line-container {
+    padding-top: 150px;
+    padding-bottom: 250px;
+  }
   .about-content {height: 300px;}
   .project-overview-content {height: 325px;}
   .desktop-project-pic {display: none;}

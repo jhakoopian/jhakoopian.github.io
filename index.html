@@ -13,31 +13,117 @@
   <div class="container">
     <nav>
       <ul class="nav nav-tabs">
-        <li class="active"><a href="index.html">home</a></li>
-        <li><a href="about.html">about</a></li>
+        <li class="active"><a href="index.html">Home</a></li>
         <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">projects
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects
           <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="tassel.html">tassel</a></li>
-            <li><a href="much_ado.html">much ado</a></li>
-            <li><a href="bloc_jams.html">bloc jams</a></li>
-            <li class="divider"></li>
-            <li><a href="projects.html">view all</a></li>
+            <li><a href="pages/resume_box.html">Resume Box</a></li>
+            <li><a href="pages/tassel.html">Tassel</a></li>
+            <li><a href="pages/much_ado.html">Much Ado</a></li>
+            <li><a href="pages/bloc_jams.html">Bloc Jams</a></li>
           <ul>
         </li>
       </ul>
     </nav>
 
-    <div class="index-text-container">
-      <h1 class="handle">jhakoopian</h1>
-      <p class="tag-line clear">let's hak that.<p>
+    <div class="container">
+      <div class="handle-tag-line-container">
+        <h1 class="handle">jhakoopian</h1>
+        <p class="tag-line clear">let's hak that.<p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+      <h1 class="heading">About</h1>
+      <div class="about-content">
+        <div class="col-md-offset-1 col-md-10 col-xs-offset-1 col-xs-10">
+          <img class="head-shot" src="assets/headshot_with_lights.jpg">
+          <div>
+            <p>Hi! My name is Joe. I'm a full-stack developer living in Queens, New York looking for a full-time developer position.</p>
+            <p>Please take a look at my collection of projects. Languages and libraries I'm familiar with include HTML, CSS, Bootstrap, Javascript, jQuery, AngularJs, Ruby, Rails, and assorted gems .</p>
+            <p>The best way to reach me is with an email addressed to joseph.hakoopian@gmail.com. Please also feel free to find me on LinkedIn. I hope to hear from you!</p>
+            <a class="btn btn-primary" href="https://www.linkedin.com/in/joseph-hakoopian">LinkedIn</a>
+            <a class="btn btn-primary" href="https://github.com/jhakoopian">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+      <h1 class="heading">Projects</h1>
+      <div class="projects-overview">
+
+        <div class="col-md-offset-1 col-md-5">
+          <div class="project">
+            <div class="row">
+              <div class="col-xs-9">
+                <h2>Resume Box</h2>
+                <p>for sharing bookmarks</p>
+                <a class="btn btn-primary" href="pages/resume_box.html">read more</a>
+              </div>
+              <div class="col-xs-3">
+                <img class="project-graphic resume-graphic" src="assets/resume_graphic.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-5">
+          <div class="project">
+            <div class="row">
+              <div class="col-xs-9">
+                <h2>Tassel</h2>
+                <p>for sharing bookmarks</p>
+                <a class="btn btn-primary" href="pages/tassel.html">read more</a>
+              </div>
+              <div class="col-xs-3">
+                <img class="project-graphic" src="assets/bookmark_graphic.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-offset-1 col-md-5">
+          <div class="project">
+            <div class="row">
+              <div class="col-xs-9">
+                <h2>Much Ado</h2>
+                <p>for staying productive</p>
+                <a class="btn btn-primary" href="pages/much_ado.html">read more</a>
+              </div>
+              <div class="col-xs-3">
+                <img class="project-graphic" src="assets/check_box_graphic.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-5">
+          <div class="project">
+            <div class="row">
+              <div class="col-xs-9">
+                <h2>Bloc Jams</h2>
+                <p>for jamming out</p>
+                <a class="btn btn-primary" href="pages/bloc_jams.html">read more</a>
+              </div>
+              <div class="col-xs-3">
+                <img class="project-graphic" src="assets/music_note_graphic.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script src="scripts/landing.js"></script>
+  <script src="scripts/index.js"></script>
 </body>
 </html>
