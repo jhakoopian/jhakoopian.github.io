@@ -64,8 +64,7 @@ hr {
 }
 
 .projects-overview {
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding-top: 60px;
 }
 
 .project {
@@ -106,7 +105,8 @@ hr {
 }
 
 @media only screen and (max-width: 991px) {
-  .project-overview-content {height: 500px;}
+  .container {padding-bottom: 20px;}
+  .projects-overview {padding-top: 50px;}
   .project {margin-bottom: 20px;}
 }
 
