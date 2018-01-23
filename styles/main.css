@@ -1,7 +1,7 @@
 body {
   font-family: 'Raleway', sans-serif;
   cursor: default;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
 }
 
 .container {
@@ -119,6 +119,8 @@ hr {
   .about-content {height: 200px;}
   .head-shot {margin-bottom: 4rem;}
   .about-text {font-size: 2rem;}
+  .project-graphic {margin-left: -20px;}
+  .resume-graphic { margin-left: -30px;}
   .project-overview-content {height: 275px;}
   .project { margin: 15px;}
   /*.btn {font-weight: bolder;}*/
