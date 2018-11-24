@@ -1,5 +1,5 @@
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Nanum Gothic', sans-serif;
   cursor: default;
   font-size: 1.7rem;
 }
@@ -68,10 +68,8 @@ hr {
 }
 
 .project {
-  border-width: 1px;
-  border-style: solid;
+  border: 1px solid rgb(225, 225, 225);
   border-radius: 5px;
-  border-color: rgb(225, 225, 225);
   padding: 20px;
   margin-bottom: 30px;
 }
